@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Minifast",
+    "slug": "minifast",
+    "sdkVersion": "51.0.0",
+    "platforms": ["ios", "android"],
+    "plugins": ["vxrn/expo-plugin"],
+    "icon": "./public/app-icon.png",
+    "splash": {
+      "image": "./public/iPhone_16_Pro_Max_portrait.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1FB2A8"
+    },
+    "ios": {}
+  }
+}
