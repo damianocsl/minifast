@@ -1,5 +1,7 @@
 # Minifast
 
+Minimal intermittent fasting app.
+
 ## Developing
 
 Run the app in development:
