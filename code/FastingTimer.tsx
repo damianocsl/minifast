@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import { Button, Square, Text, XStack, YStack } from 'tamagui'
+import { Button, Text, XStack, YStack } from 'tamagui'
 
 export function FastingTimer() {
-  const [time, setTime] = useState<number>(0)
-  const [isActive, setIsActive] = useState<boolean>(false)
+  const [time, setTime] = useState(0)
+  const [isActive, setIsActive] = useState(false)
 
   useEffect(() => {
     let interval: NodeJS.Timeout | null = null
