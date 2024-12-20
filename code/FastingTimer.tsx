@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Button, Text, XStack, YStack } from 'tamagui'
+import { Text, XStack, YStack } from 'tamagui'
 
 export function FastingTimer() {
   const [time, setTime] = useState(0)
@@ -43,7 +43,7 @@ export function FastingTimer() {
         {formatTime(time)}
       </Text>
       <XStack gap={4}>
-        {isActive ? (
+        {/* {isActive ? (
           <Button variant="outlined" onPress={handleStop}>
             Stop
           </Button>
@@ -51,6 +51,11 @@ export function FastingTimer() {
           <Button variant="outlined" onPress={handleStart}>
             Start Fast
           </Button>
+        )} */}
+        {isActive ? (
+          <button onClick={handleStop}>Stop</button>
+        ) : (
+          <button onClick={handleStart}>Start Fast</button>
         )}
       </XStack>
     </YStack>
