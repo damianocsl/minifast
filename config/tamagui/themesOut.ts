@@ -1,72 +1,58 @@
 type Theme = {
-  accentBackground: string;
-  accentColor: string;
-  background0: string;
-  background025: string;
-  background05: string;
-  background075: string;
-  color1: string;
-  color2: string;
-  color3: string;
-  color4: string;
-  color5: string;
-  color6: string;
-  color7: string;
-  color8: string;
-  color9: string;
-  color10: string;
-  color11: string;
-  color12: string;
-  color13: string;
-  color0: string;
-  color025: string;
-  color05: string;
-  color075: string;
-  color: string;
-  background: string;
-  borderColor: string;
-  yellow1: string;
-  yellow2: string;
-  yellow3: string;
-  yellow4: string;
-  yellow5: string;
-  yellow6: string;
-  yellow7: string;
-  yellow8: string;
-  yellow9: string;
-  yellow10: string;
-  yellow11: string;
-  yellow12: string;
-  yellow13: string;
-  gray1: string;
-  gray2: string;
-  gray3: string;
-  gray4: string;
-  gray5: string;
-  gray6: string;
-  gray7: string;
-  gray8: string;
-  gray9: string;
-  gray10: string;
-  gray11: string;
-  gray12: string;
-  blue: string;
-  green: string;
-  red: string;
-  purple: string;
-  pink: string;
-  blueFg: string;
-  greenFg: string;
-  redFg: string;
-  purpleFg: string;
-  pinkFg: string;
-  shadowColor: string;
-  shadowColorStrong: string;
-
+  accentBackground: string
+  accentColor: string
+  background0: string
+  background025: string
+  background05: string
+  background075: string
+  color1: string
+  color2: string
+  color3: string
+  color4: string
+  color5: string
+  color6: string
+  color7: string
+  color8: string
+  color9: string
+  color10: string
+  color11: string
+  color12: string
+  color13: string
+  color0: string
+  color025: string
+  color05: string
+  color075: string
+  color: string
+  background: string
+  borderColor: string
+  gray1: string
+  gray2: string
+  gray3: string
+  gray4: string
+  gray5: string
+  gray6: string
+  gray7: string
+  gray8: string
+  gray9: string
+  gray10: string
+  gray11: string
+  gray12: string
+  blue: string
+  green: string
+  red: string
+  purple: string
+  pink: string
+  blueFg: string
+  greenFg: string
+  redFg: string
+  purpleFg: string
+  pinkFg: string
+  shadowColor: string
+  shadowColorStrong: string
 }
 
 function t(a: [number, number][]) {
-  let res: Record<string,string> = {}
+  let res: Record<string, string> = {}
   for (const [ki, vi] of a) {
     res[ks[ki] as string] = vs[vi] as string
   }
@@ -209,86 +195,249 @@ const vs = [
 ]
 
 const ks = [
-'accentBackground',
-'accentColor',
-'background0',
-'background025',
-'background05',
-'background075',
-'color1',
-'color2',
-'color3',
-'color4',
-'color5',
-'color6',
-'color7',
-'color8',
-'color9',
-'color10',
-'color11',
-'color12',
-'color13',
-'color0',
-'color025',
-'color05',
-'color075',
-'color',
-'background',
-'borderColor',
-'yellow1',
-'yellow2',
-'yellow3',
-'yellow4',
-'yellow5',
-'yellow6',
-'yellow7',
-'yellow8',
-'yellow9',
-'yellow10',
-'yellow11',
-'yellow12',
-'yellow13',
-'gray1',
-'gray2',
-'gray3',
-'gray4',
-'gray5',
-'gray6',
-'gray7',
-'gray8',
-'gray9',
-'gray10',
-'gray11',
-'gray12',
-'blue',
-'green',
-'red',
-'purple',
-'pink',
-'blueFg',
-'greenFg',
-'redFg',
-'purpleFg',
-'pinkFg',
-'shadowColor',
-'shadowColorStrong']
+  'accentBackground',
+  'accentColor',
+  'background0',
+  'background025',
+  'background05',
+  'background075',
+  'color1',
+  'color2',
+  'color3',
+  'color4',
+  'color5',
+  'color6',
+  'color7',
+  'color8',
+  'color9',
+  'color10',
+  'color11',
+  'color12',
+  'color13',
+  'color0',
+  'color025',
+  'color05',
+  'color075',
+  'color',
+  'background',
+  'borderColor',
+  'gray1',
+  'gray2',
+  'gray3',
+  'gray4',
+  'gray5',
+  'gray6',
+  'gray7',
+  'gray8',
+  'gray9',
+  'gray10',
+  'gray11',
+  'gray12',
+  'blue',
+  'green',
+  'red',
+  'purple',
+  'pink',
+  'blueFg',
+  'greenFg',
+  'redFg',
+  'purpleFg',
+  'pinkFg',
+  'shadowColor',
+  'shadowColorStrong',
+]
 
-
-const n1 = t([[0, 0],[1, 1],[2, 2],[3, 3],[4, 4],[5, 5],[6, 6],[7, 7],[8, 8],[9, 9],[10, 10],[11, 11],[12, 12],[13, 13],[14, 14],[15, 15],[16, 16],[17, 17],[18, 18],[19, 19],[20, 20],[21, 21],[22, 22],[23, 18],[24, 5],[25, 7],[26, 23],[27, 24],[28, 25],[29, 26],[30, 27],[31, 0],[32, 28],[33, 29],[34, 30],[35, 31],[36, 32],[37, 33],[38, 18],[39, 34],[40, 35],[41, 36],[42, 37],[43, 38],[44, 39],[45, 40],[46, 41],[47, 14],[48, 42],[49, 43],[50, 17],[51, 44],[52, 45],[53, 46],[54, 47],[55, 48],[56, 49],[57, 50],[58, 51],[59, 52],[60, 53],[61, 54],[62, 55]])
+const n1 = t([
+  [0, 0],
+  [1, 1],
+  [2, 2],
+  [3, 3],
+  [4, 4],
+  [5, 5],
+  [6, 6],
+  [7, 7],
+  [8, 8],
+  [9, 9],
+  [10, 10],
+  [11, 11],
+  [12, 12],
+  [13, 13],
+  [14, 14],
+  [15, 15],
+  [16, 16],
+  [17, 17],
+  [18, 18],
+  [19, 19],
+  [20, 20],
+  [21, 21],
+  [22, 22],
+  [23, 18],
+  [24, 5],
+  [25, 7],
+  [26, 23],
+  [27, 24],
+  [28, 25],
+  [29, 26],
+  [30, 27],
+  [31, 0],
+  [32, 28],
+  [33, 29],
+  [34, 30],
+  [35, 31],
+  [36, 32],
+  [37, 33],
+  [38, 18],
+  [39, 34],
+  [40, 35],
+  [41, 36],
+  [42, 37],
+  [43, 38],
+  [44, 39],
+  [45, 40],
+  [46, 41],
+  [47, 14],
+  [48, 42],
+  [49, 43],
+  [50, 17],
+  [51, 44],
+  [52, 45],
+  [53, 46],
+  [54, 47],
+  [55, 48],
+  [56, 49],
+  [57, 50],
+  [58, 51],
+  [59, 52],
+  [60, 53],
+  [61, 54],
+  [62, 55],
+])
 
 export const light = n1
-const n2 = t([[0, 1],[1, 0],[2, 19],[3, 20],[4, 21],[5, 22],[6, 56],[7, 57],[8, 58],[9, 59],[10, 60],[11, 61],[12, 62],[13, 63],[14, 64],[15, 65],[16, 66],[17, 6],[18, 6],[19, 2],[20, 3],[21, 4],[22, 5],[23, 6],[24, 22],[25, 57],[26, 67],[27, 68],[28, 69],[29, 70],[30, 71],[31, 1],[32, 72],[33, 73],[34, 74],[35, 75],[36, 76],[37, 77],[38, 6],[39, 78],[40, 79],[41, 80],[42, 81],[43, 82],[44, 83],[45, 84],[46, 85],[47, 86],[48, 87],[49, 88],[50, 37],[51, 89],[52, 90],[53, 91],[54, 92],[55, 93],[56, 94],[57, 95],[58, 96],[59, 97],[60, 98],[61, 99],[62, 100]])
+const n2 = t([
+  [0, 1],
+  [1, 0],
+  [2, 19],
+  [3, 20],
+  [4, 21],
+  [5, 22],
+  [6, 56],
+  [7, 57],
+  [8, 58],
+  [9, 59],
+  [10, 60],
+  [11, 61],
+  [12, 62],
+  [13, 63],
+  [14, 64],
+  [15, 65],
+  [16, 66],
+  [17, 6],
+  [18, 6],
+  [19, 2],
+  [20, 3],
+  [21, 4],
+  [22, 5],
+  [23, 6],
+  [24, 22],
+  [25, 57],
+  [26, 67],
+  [27, 68],
+  [28, 69],
+  [29, 70],
+  [30, 71],
+  [31, 1],
+  [32, 72],
+  [33, 73],
+  [34, 74],
+  [35, 75],
+  [36, 76],
+  [37, 77],
+  [38, 6],
+  [39, 78],
+  [40, 79],
+  [41, 80],
+  [42, 81],
+  [43, 82],
+  [44, 83],
+  [45, 84],
+  [46, 85],
+  [47, 86],
+  [48, 87],
+  [49, 88],
+  [50, 37],
+  [51, 89],
+  [52, 90],
+  [53, 91],
+  [54, 92],
+  [55, 93],
+  [56, 94],
+  [57, 95],
+  [58, 96],
+  [59, 97],
+  [60, 98],
+  [61, 99],
+  [62, 100],
+])
 
 export const dark = n2
-const n3 = t([[0, 23],[1, 18],[2, 101],[3, 102],[4, 103],[5, 104],[6, 34],[7, 35],[8, 36],[9, 37],[10, 38],[11, 39],[12, 40],[13, 41],[14, 14],[15, 42],[16, 43],[17, 17],[18, 105],[19, 106],[20, 107],[21, 108],[22, 105],[23, 105],[24, 104],[25, 35]])
+const n3 = t([
+  [0, 23],
+  [1, 18],
+  [2, 101],
+  [3, 102],
+  [4, 103],
+  [5, 104],
+  [6, 34],
+  [7, 35],
+  [8, 36],
+  [9, 37],
+  [10, 38],
+  [11, 39],
+  [12, 40],
+  [13, 41],
+  [14, 14],
+  [15, 42],
+  [16, 43],
+  [17, 17],
+  [18, 105],
+  [19, 106],
+  [20, 107],
+  [21, 108],
+  [22, 105],
+  [23, 105],
+  [24, 104],
+  [25, 35],
+])
 
 export const light_gray = n3
-const n4 = t([[0, 34],[1, 17],[2, 109],[3, 110],[4, 111],[5, 112],[6, 23],[7, 24],[8, 25],[9, 26],[10, 27],[11, 0],[12, 28],[13, 29],[14, 30],[15, 31],[16, 32],[17, 33],[18, 18],[19, 113],[20, 114],[21, 115],[22, 116],[23, 18],[24, 112],[25, 24]])
-
-export const light_yellow = n4
-const n5 = t([[0, 23],[1, 18],[2, 117],[3, 118],[4, 119],[5, 120],[6, 78],[7, 79],[8, 80],[9, 81],[10, 82],[11, 83],[12, 84],[13, 85],[14, 86],[15, 87],[16, 88],[17, 37],[18, 121],[19, 122],[20, 123],[21, 124],[22, 121],[23, 121],[24, 120],[25, 79]])
+const n5 = t([
+  [0, 23],
+  [1, 18],
+  [2, 117],
+  [3, 118],
+  [4, 119],
+  [5, 120],
+  [6, 78],
+  [7, 79],
+  [8, 80],
+  [9, 81],
+  [10, 82],
+  [11, 83],
+  [12, 84],
+  [13, 85],
+  [14, 86],
+  [15, 87],
+  [16, 88],
+  [17, 37],
+  [18, 121],
+  [19, 122],
+  [20, 123],
+  [21, 124],
+  [22, 121],
+  [23, 121],
+  [24, 120],
+  [25, 79],
+])
 
 export const dark_gray = n5
-const n6 = t([[0, 34],[1, 17],[2, 125],[3, 126],[4, 127],[5, 128],[6, 67],[7, 68],[8, 69],[9, 70],[10, 71],[11, 1],[12, 72],[13, 73],[14, 74],[15, 75],[16, 76],[17, 77],[18, 6],[19, 129],[20, 130],[21, 131],[22, 132],[23, 6],[24, 128],[25, 68]])
-
-export const dark_yellow = n6

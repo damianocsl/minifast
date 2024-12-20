@@ -86,10 +86,6 @@ const themeBuilder = createThemeBuilder()
       palette: 'gray',
       template: 'base',
     },
-    yellow: {
-      palette: 'yellow',
-      template: 'base',
-    },
   })
 // no need for component themes for us
 // .addComponentThemes(defaultComponentThemes, {
