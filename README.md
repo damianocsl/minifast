@@ -33,3 +33,4 @@ Afterward, follow the instructions printed in the terminal to build and upload y
 ## Colors
 
 - Brand color: `#1FB2A8`
+- Complementary: `#B21E28`
