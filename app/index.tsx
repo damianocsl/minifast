@@ -4,7 +4,7 @@ import { Header } from '~/code/Header'
 
 export function HomePage() {
   return (
-    <YStack bg="$color1" gap="$4" ai="center" jc="center" f={1} backgroundColor="blue">
+    <YStack bg="$color1" gap="$4" ai="center" jc="center" f={1}>
       <Header />
       <FastingTimer />
     </YStack>
