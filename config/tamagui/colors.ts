@@ -87,8 +87,8 @@ export const color = {
 }
 
 export const brandColor = {
-  light: color.gray6Light,
-  dark: color.gray6Dark,
+  light: '#1FB2A8',
+  dark: '#1FB2A8',
 }
 
 export const palettes = (() => {
