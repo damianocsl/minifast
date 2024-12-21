@@ -39,7 +39,7 @@ export function FastingTimer() {
   }
 
   return (
-    <YStack gap={4}>
+    <YStack gap="$4" flex={1} ai="center" jc="center">
       <Text fontSize={20} style={{ textAlign: 'center' }}>
         {formatTime(time)}
       </Text>
