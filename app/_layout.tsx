@@ -2,7 +2,7 @@ import './_layout.css'
 import './tamagui.css'
 
 import { SchemeProvider, useColorScheme } from '@vxrn/color-scheme'
-import { LoadProgressBar, Slot } from 'one'
+import { LoadProgressBar, Tabs } from 'one'
 import { isWeb, TamaguiProvider } from 'tamagui'
 import config from '~/config/tamagui/tamagui.config'
 
@@ -22,7 +22,7 @@ export default function Layout() {
 
       <SchemeProvider>
         <TamaguiRootProvider>
-          <Slot />
+          <Tabs />
         </TamaguiRootProvider>
       </SchemeProvider>
     </>
